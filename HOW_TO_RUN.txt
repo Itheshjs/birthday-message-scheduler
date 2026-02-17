@@ -1,0 +1,17 @@
+HO TO RUN THE SCHEDULER MANUALLY
+===================================
+
+Option 1: Background Loop (Recommended)
+---------------------------------------
+Double-click the "run_scheduler.bat" file in this folder.
+- It opens a black window.
+- It checks for messages every 60 seconds.
+- Keep the window open to keep the scheduler running.
+
+Option 2: Run Once (Manual Check)
+---------------------------------
+Open a terminal/command prompt in this folder and type:
+
+    c:\xampp-new\php\php.exe cron_runner.php
+
+This will check for messages *one time* and then exit.

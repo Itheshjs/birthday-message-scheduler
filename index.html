@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Message Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Birthday Message Scheduler</h1>
+            <p>Schedule automatic messages for birthdays and special occasions</p>
+        </header>
+        
+        <main>
+            <section class="form-section">
+                <h2>Schedule a Message</h2>
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="name">Recipient Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Enter your birthday message or special occasion message..."></textarea>
+                    </div>
+                    
+                    <button type="submit">Schedule Message</button>
+                </form>
+            </section>
+            
+            <section class="scheduled-messages">
+                <h2>Scheduled Messages</h2>
+                <div id="messagesList">
+                    <!-- Scheduled messages will appear here -->
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
